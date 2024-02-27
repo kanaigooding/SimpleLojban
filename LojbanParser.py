@@ -6,9 +6,11 @@ gismu_pattern = re.compile(r"\b([a-z]{2}[aeiou][a-z][aeiou]|[a-z][aeiou][a-z]{2}
 number_pattern = re.compile(r"\b\d+\b")
 name_pattern = re.compile(r"\.[a-z]+\.")
 
+
 def parse_input(input_str):
     statements = [stmt.strip() for stmt in input_str.split("i") if stmt.strip()]
     return [parse_statement(stmt) for stmt in statements]
+
 
 def parse_statement(statement):
     # Splitting the statement into words, ensuring we strip leading/trailing whitespace
@@ -30,4 +32,3 @@ def parse_statement(statement):
             raise ValueError(f"Invalid word type: '{word}'")
 
     return parsed_words
-

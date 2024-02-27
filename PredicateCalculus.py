@@ -62,9 +62,10 @@ def evaluate_statements(parsed_statements):
 def main():
     # Example input strings for test cases
     test_inputs = [
-        "i lo .Brook. fatci i lo .coffee. fatci i lo pinxe cmavo lo steko lo .Brook. lo steko lo .coffee. lo steni i lo .X. pinxe lo .coffee.",
-        "i lo .number. sumji 1 2 i 3 dunli lo .number.",
-        "i lo .list. steko 1 lo steko 2 lo steni i lo steni fatci"
+        "i lo .Brook. fatci i lo .coffee. fatci",
+        "i lo pinxe cmavo lo steko lo .Brook.",
+        "lo steko lo .coffee. lo steni"
+        "i lo .X. pinxe lo .coffee."
     ]
 
     # Process and evaluate each test input
